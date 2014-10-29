@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mAG-wc-pX3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mAG-wc-pX3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l42-Vj-sM8" customClass="DieLabel">
+                            <label opaque="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l42-Vj-sM8" customClass="DieLabel">
                                 <rect key="frame" x="85" y="106" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.97147226333618164" green="0.91495209932327271" blue="0.75988864898681641" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -27,7 +27,7 @@
                                     <outletCollection property="gestureRecognizers" destination="422-lw-cec" appends="YES" id="dUb-VS-jdT"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N44-yN-vw1" customClass="DieLabel">
+                            <label opaque="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N44-yN-vw1" customClass="DieLabel">
                                 <rect key="frame" x="175" y="106" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.97147226330000003" green="0.91495209929999999" blue="0.75988864899999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -38,7 +38,7 @@
                                     <outletCollection property="gestureRecognizers" destination="zFC-Mh-28C" appends="YES" id="irB-mH-R3M"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAn-0I-qPr" customClass="DieLabel">
+                            <label opaque="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAn-0I-qPr" customClass="DieLabel">
                                 <rect key="frame" x="85" y="190" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.97147226330000003" green="0.91495209929999999" blue="0.75988864899999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -49,7 +49,18 @@
                                     <outletCollection property="gestureRecognizers" destination="mlS-LF-HWq" appends="YES" id="HYK-fC-SJE"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KN1-lg-tBi" customClass="DieLabel">
+                            <label opaque="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXE-LT-sVq" customClass="DieLabel">
+                                <rect key="frame" x="175" y="190" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.97147226330000003" green="0.91495209929999999" blue="0.75988864899999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="jxf-Fd-o33" appends="YES" id="T7W-a6-Ugl"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KN1-lg-tBi" customClass="DieLabel">
                                 <rect key="frame" x="85" y="275" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.97147226330000003" green="0.91495209929999999" blue="0.75988864899999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -60,7 +71,7 @@
                                     <outletCollection property="gestureRecognizers" destination="D9n-Ot-brX" appends="YES" id="M7Z-9n-8Md"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Da-WQ-SRm" customClass="DieLabel">
+                            <label opaque="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Da-WQ-SRm" customClass="DieLabel">
                                 <rect key="frame" x="175" y="275" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.97147226330000003" green="0.91495209929999999" blue="0.75988864899999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -80,17 +91,6 @@
                                     <action selector="onRollButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="em8-1g-LD1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXE-LT-sVq" customClass="DieLabel">
-                                <rect key="frame" x="175" y="190" width="60" height="60"/>
-                                <color key="backgroundColor" red="0.97147226330000003" green="0.91495209929999999" blue="0.75988864899999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <gestureRecognizers/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="jxf-Fd-o33" appends="YES" id="T7W-a6-Ugl"/>
-                                </connections>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

@@ -17,7 +17,8 @@
 @property (strong, nonatomic) IBOutlet DieLabel *die5;
 
 @property (strong, nonatomic) IBOutletCollection(DieLabel) NSArray *dieLabelCollection;
-@property NSMutableArray *dice;
+@property NSMutableArray *heldDice;
+
 @end
 
 @implementation RootViewController
@@ -30,7 +31,7 @@
         die.delegate = self;
         
     }
-    self.dice = [@[] mutableCopy];
+    self.heldDice = [@[] mutableCopy];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,7 +42,13 @@
 
 - (IBAction)onRollButtonPressed:(UIButton *)sender
 {
-    for (DieLabel *die in self.dieLabelCollection)
+    NSMutableArray *dieLabelCollectionCopy = [NSMutableArray arrayWithArray:self.dieLabelCollection];
+    for (DieLabel *heldDie in self.heldDice)
+    {
+        [dieLabelCollectionCopy removeObject:heldDie];
+    }
+    
+    for (DieLabel *die in dieLabelCollectionCopy)
     {
         [die roll];
     }
@@ -49,7 +56,8 @@
 
 -(void)dieHold:(UILabel *)tappedLabel
 {
-    [self.dice addObject:tappedLabel];
+    tappedLabel.backgroundColor = [UIColor lightGrayColor];
+    [self.heldDice addObject:tappedLabel];
 }
 
 

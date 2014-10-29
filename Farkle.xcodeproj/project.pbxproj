@@ -66,6 +66,7 @@
 		39AED82F1A01875A00770CE2 = {
 			isa = PBXGroup;
 			children = (
+				39AED8451A01875A00770CE2 /* Main.storyboard */,
 				39AED83A1A01875A00770CE2 /* Farkle */,
 				39AED8541A01875A00770CE2 /* FarkleTests */,
 				39AED8391A01875A00770CE2 /* Products */,
@@ -89,7 +90,6 @@
 				39AED8421A01875A00770CE2 /* RootViewController.h */,
 				39AED8431A01875A00770CE2 /* RootViewController.m */,
 				39AED8641A01884600770CE2 /* Model */,
-				39AED8451A01875A00770CE2 /* Main.storyboard */,
 				39AED8481A01875A00770CE2 /* Images.xcassets */,
 				39AED84A1A01875A00770CE2 /* LaunchScreen.xib */,
 				39AED83B1A01875A00770CE2 /* Supporting Files */,
@@ -264,6 +264,7 @@
 				39AED8461A01875A00770CE2 /* Base */,
 			);
 			name = Main.storyboard;
+			path = Farkle;
 			sourceTree = "<group>";
 		};
 		39AED84A1A01875A00770CE2 /* LaunchScreen.xib */ = {
@@ -426,6 +427,7 @@
 				39AED85D1A01875A00770CE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		39AED85E1A01875A00770CE2 /* Build configuration list for PBXNativeTarget "FarkleTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +436,7 @@
 				39AED8601A01875A00770CE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

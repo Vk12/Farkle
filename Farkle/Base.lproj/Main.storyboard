@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l42-Vj-sM8" customClass="DieLabel">
-                                <rect key="frame" x="85" y="169" width="60" height="60"/>
+                            <label opaque="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l42-Vj-sM8" customClass="DieLabel">
+                                <rect key="frame" x="72" y="219" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.97147226333618164" green="0.91495209932327271" blue="0.75988864898681641" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -27,8 +27,8 @@
                                     <outletCollection property="gestureRecognizers" destination="422-lw-cec" appends="YES" id="dUb-VS-jdT"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N44-yN-vw1" customClass="DieLabel">
-                                <rect key="frame" x="175" y="169" width="60" height="60"/>
+                            <label opaque="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N44-yN-vw1" customClass="DieLabel">
+                                <rect key="frame" x="188" y="219" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.97147226330000003" green="0.91495209929999999" blue="0.75988864899999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -38,8 +38,8 @@
                                     <outletCollection property="gestureRecognizers" destination="zFC-Mh-28C" appends="YES" id="irB-mH-R3M"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAn-0I-qPr" customClass="DieLabel">
-                                <rect key="frame" x="85" y="253" width="60" height="60"/>
+                            <label opaque="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAn-0I-qPr" customClass="DieLabel">
+                                <rect key="frame" x="72" y="311" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.97147226330000003" green="0.91495209929999999" blue="0.75988864899999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -49,8 +49,8 @@
                                     <outletCollection property="gestureRecognizers" destination="mlS-LF-HWq" appends="YES" id="HYK-fC-SJE"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXE-LT-sVq" customClass="DieLabel">
-                                <rect key="frame" x="175" y="253" width="60" height="60"/>
+                            <label opaque="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GXE-LT-sVq" customClass="DieLabel">
+                                <rect key="frame" x="188" y="311" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.97147226330000003" green="0.91495209929999999" blue="0.75988864899999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -60,8 +60,8 @@
                                     <outletCollection property="gestureRecognizers" destination="jxf-Fd-o33" appends="YES" id="T7W-a6-Ugl"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KN1-lg-tBi" customClass="DieLabel">
-                                <rect key="frame" x="85" y="338" width="60" height="60"/>
+                            <label opaque="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KN1-lg-tBi" customClass="DieLabel">
+                                <rect key="frame" x="72" y="403" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.97147226330000003" green="0.91495209929999999" blue="0.75988864899999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -71,8 +71,8 @@
                                     <outletCollection property="gestureRecognizers" destination="D9n-Ot-brX" appends="YES" id="M7Z-9n-8Md"/>
                                 </connections>
                             </label>
-                            <label opaque="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Da-WQ-SRm" customClass="DieLabel">
-                                <rect key="frame" x="175" y="338" width="60" height="60"/>
+                            <label opaque="NO" tag="6" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Da-WQ-SRm" customClass="DieLabel">
+                                <rect key="frame" x="188" y="403" width="60" height="60"/>
                                 <color key="backgroundColor" red="0.97147226330000003" green="0.91495209929999999" blue="0.75988864899999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
@@ -83,7 +83,7 @@
                                 </connections>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPK-KV-7vg">
-                                <rect key="frame" x="133" y="463" width="54" height="30"/>
+                                <rect key="frame" x="54" y="507" width="100" height="30"/>
                                 <state key="normal" title="Roll">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -91,14 +91,8 @@
                                     <action selector="onRollButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="em8-1g-LD1"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmv-co-Jk0">
-                                <rect key="frame" x="123" y="72" width="74" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rf7-BM-pEJ">
-                                <rect key="frame" x="189" y="463" width="36" height="30"/>
+                                <rect key="frame" x="167" y="507" width="100" height="30"/>
                                 <state key="normal" title="Bank">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -106,18 +100,52 @@
                                     <action selector="onBankTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Vgu-y3-FO1"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player One" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ke5-es-cCM">
+                                <rect key="frame" x="72" y="86" width="177" height="45"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmv-co-Jk0">
+                                <rect key="frame" x="67" y="149" width="74" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qNv-sk-BHJ">
+                                <rect key="frame" x="180" y="149" width="74" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9fF-8G-LbK">
+                                <rect key="frame" x="83" y="169" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jma-QL-est">
+                                <rect key="frame" x="196" y="169" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Oe5-5N-0b0"/>
                     <connections>
+                        <outlet property="bankButton" destination="rf7-BM-pEJ" id="96o-Br-Ql7"/>
                         <outlet property="die0" destination="l42-Vj-sM8" id="VCv-kd-qH7"/>
                         <outlet property="die1" destination="N44-yN-vw1" id="byp-4z-eVs"/>
                         <outlet property="die2" destination="QAn-0I-qPr" id="JsW-sU-hBi"/>
                         <outlet property="die3" destination="GXE-LT-sVq" id="EoL-E2-7lH"/>
                         <outlet property="die4" destination="KN1-lg-tBi" id="cNX-cq-fAs"/>
                         <outlet property="die5" destination="3Da-WQ-SRm" id="Ug6-pc-v4g"/>
-                        <outlet property="userScore" destination="lmv-co-Jk0" id="oDk-PI-rgF"/>
+                        <outlet property="player1Score" destination="lmv-co-Jk0" id="uWK-1K-Oai"/>
+                        <outlet property="player2Score" destination="qNv-sk-BHJ" id="1yn-it-5VO"/>
+                        <outlet property="rollButton" destination="fPK-KV-7vg" id="8IH-SU-Evr"/>
+                        <outlet property="turnLabel" destination="ke5-es-cCM" id="trb-wu-QT0"/>
                         <outletCollection property="allDiceArray" destination="3Da-WQ-SRm" id="Vhh-C9-zPv"/>
                         <outletCollection property="allDiceArray" destination="l42-Vj-sM8" id="Ze6-g7-iWt"/>
                         <outletCollection property="allDiceArray" destination="N44-yN-vw1" id="X8B-kH-Ldj"/>

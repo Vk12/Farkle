@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 @protocol DieLabelDelegate <NSObject>
-- (void)dieHold:(UILabel *)tappedLabel;
+- (void)dieHold:(UILabel *)tappedDie;
 
 @end
 

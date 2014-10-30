@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet DieLabel *die3;
 @property (strong, nonatomic) IBOutlet DieLabel *die4;
 @property (strong, nonatomic) IBOutlet DieLabel *die5;
+@property (strong, nonatomic) IBOutlet UILabel *userScore;
 
 @property (strong, nonatomic) IBOutletCollection(DieLabel) NSArray *dieLabelCollection;
 @property NSMutableArray *heldDice;
@@ -22,7 +23,7 @@
 @end
 
 @implementation RootViewController
-
+#pragma mark - ViewController View Cycle
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -34,11 +35,14 @@
     self.heldDice = [@[] mutableCopy];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Die Label Delegation
+-(void)dieHold:(UILabel *)tappedLabel
+{
+    tappedLabel.backgroundColor = [UIColor lightGrayColor];
+    [self.heldDice addObject:tappedLabel];
 }
 
+#pragma mark - Button Presses
 
 - (IBAction)onRollButtonPressed:(UIButton *)sender
 {
@@ -54,11 +58,23 @@
     }
 }
 
--(void)dieHold:(UILabel *)tappedLabel
+
+- (IBAction)onBankTap:(UIButton *)sender
 {
-    tappedLabel.backgroundColor = [UIColor lightGrayColor];
-    [self.heldDice addObject:tappedLabel];
+    NSInteger score = [self getScore];
+    self.userScore.text = [NSString stringWithFormat:@"%li",(long)score];
 }
+
+#pragma mark - Helper Methods
+
+- (NSInteger)getScore
+{
+    return 4;
+}
+
+
+
+
 
 
 

@@ -8,6 +8,8 @@
 
 #import "RootViewController.h"
 #import "DieLabel.h"
+#define kScoreFor1s 1000
+
 @interface RootViewController () <DieLabelDelegate>
 @property (strong, nonatomic) IBOutlet DieLabel *die0;
 @property (strong, nonatomic) IBOutlet DieLabel *die1;
@@ -16,9 +18,10 @@
 @property (strong, nonatomic) IBOutlet DieLabel *die4;
 @property (strong, nonatomic) IBOutlet DieLabel *die5;
 @property (strong, nonatomic) IBOutlet UILabel *userScore;
-
-@property (strong, nonatomic) IBOutletCollection(DieLabel) NSArray *dieLabelCollection;
+@property (strong, nonatomic) IBOutletCollection(DieLabel) NSArray *allDiceArray;
 @property NSMutableArray *heldDice;
+@property NSInteger totalScore;
+@property UIColor *dieColor;
 
 @end
 
@@ -27,12 +30,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    for (DieLabel *die in self.dieLabelCollection)
+    for (DieLabel *die in self.allDiceArray)
     {
         die.delegate = self;
-        
     }
     self.heldDice = [@[] mutableCopy];
+    self.dieColor = self.die1.backgroundColor;
 }
 
 #pragma mark - Die Label Delegation
@@ -46,30 +49,66 @@
 
 - (IBAction)onRollButtonPressed:(UIButton *)sender
 {
-    NSMutableArray *dieLabelCollectionCopy = [NSMutableArray arrayWithArray:self.dieLabelCollection];
+    
+    // Roll unheld dice
+    NSMutableArray *unheldDice = [NSMutableArray arrayWithArray:self.allDiceArray];
     for (DieLabel *heldDie in self.heldDice)
     {
-        [dieLabelCollectionCopy removeObject:heldDie];
+        [unheldDice removeObject:heldDie];
     }
     
-    for (DieLabel *die in dieLabelCollectionCopy)
+    for (DieLabel *die in unheldDice)
     {
         [die roll];
     }
+    
+    
 }
 
 
 - (IBAction)onBankTap:(UIButton *)sender
 {
-    NSInteger score = [self getScore];
-    self.userScore.text = [NSString stringWithFormat:@"%li",(long)score];
+    // add turn score to total score and update score label
+    NSInteger turnScore = [self getScore];
+    self.totalScore = self.totalScore + turnScore;
+    self.userScore.text = [NSString stringWithFormat:@"%li",(long)self.totalScore];
+    
+    // clear board
+    [self.heldDice removeAllObjects];
+    
+    for (UILabel *heldDie in self.allDiceArray)
+    {
+        heldDie.backgroundColor = self.dieColor;
+        heldDie.text = @"--";
+    }
 }
 
 #pragma mark - Helper Methods
 
 - (NSInteger)getScore
 {
-    return 4;
+    NSInteger turnScore = 0;
+    int numberof1s = 0;
+    
+    // count number of each number
+    for (DieLabel *heldDie in self.heldDice)
+    {
+        if ([heldDie.text isEqualToString:@"1"])
+        {
+            numberof1s++;
+        }
+    }
+    
+    // scoring
+    if (numberof1s == 3)
+    {
+        turnScore = turnScore + kScoreFor1s;
+    }
+    if (numberof1s == 6) {
+        turnScore = turnScore + (2 * kScoreFor1s);
+    }
+    
+    return turnScore;
 }
 
 

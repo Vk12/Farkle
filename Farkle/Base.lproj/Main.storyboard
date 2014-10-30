@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mAG-wc-pX3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mAG-wc-pX3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -118,12 +118,12 @@
                         <outlet property="die4" destination="KN1-lg-tBi" id="cNX-cq-fAs"/>
                         <outlet property="die5" destination="3Da-WQ-SRm" id="Ug6-pc-v4g"/>
                         <outlet property="userScore" destination="lmv-co-Jk0" id="oDk-PI-rgF"/>
-                        <outletCollection property="dieLabelCollection" destination="l42-Vj-sM8" id="ZZT-gJ-4Tt"/>
-                        <outletCollection property="dieLabelCollection" destination="N44-yN-vw1" id="EUx-Zh-gwI"/>
-                        <outletCollection property="dieLabelCollection" destination="QAn-0I-qPr" id="plW-3w-NgS"/>
-                        <outletCollection property="dieLabelCollection" destination="GXE-LT-sVq" id="x2C-w1-zLa"/>
-                        <outletCollection property="dieLabelCollection" destination="KN1-lg-tBi" id="Oyp-IP-Ey7"/>
-                        <outletCollection property="dieLabelCollection" destination="3Da-WQ-SRm" id="KVA-bS-loo"/>
+                        <outletCollection property="allDiceArray" destination="3Da-WQ-SRm" id="Vhh-C9-zPv"/>
+                        <outletCollection property="allDiceArray" destination="l42-Vj-sM8" id="Ze6-g7-iWt"/>
+                        <outletCollection property="allDiceArray" destination="N44-yN-vw1" id="X8B-kH-Ldj"/>
+                        <outletCollection property="allDiceArray" destination="QAn-0I-qPr" id="X80-Xn-JDX"/>
+                        <outletCollection property="allDiceArray" destination="KN1-lg-tBi" id="xFb-V6-JRv"/>
+                        <outletCollection property="allDiceArray" destination="GXE-LT-sVq" id="wfc-ji-yQ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
